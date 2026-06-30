@@ -56,7 +56,7 @@ jobs:
           script_stop: true
           script: |
             # 1. Navega até a pasta onde o projeto está clonado na sua VM
-            cd /home/opc/projetos/invoice-consumer
+            cd /home/opc/projetos/invoice-producer
             
             # 2. Garante permissão e roda o script que veio no Git
             chmod +x ./scripts/deploy-docker.sh
