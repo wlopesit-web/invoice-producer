@@ -6,6 +6,7 @@ echo "=== 🚀 STEP 2: DISPARANDO GO-LIVE COM COFRE DE CREDENCIAIS ==="
 
 docker run -d \
   --name invoice-producer-container \
+  --network kafka-shared-network \
   --restart always \
   -p 8083:8083\
   -e SERVER_PORT=8083 \
