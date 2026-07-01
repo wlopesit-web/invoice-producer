@@ -9,7 +9,7 @@ docker run -d \
   --restart always \
   -p 8083:8083\
   -e SERVER_PORT=8083 \
-  -e SPRING_KAFKA_BOOTSTRAP_SERVERS=147.15.123.230:9092 \
+  -e SPRING_KAFKA_BOOTSTRAP_SERVERS="kafka-portfolio:29092" \
   -e JAVA_OPTS="-Xmx256M -Xms128M" \
   invoice-producer-app
 
